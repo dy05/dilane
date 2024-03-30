@@ -47,10 +47,30 @@ include_once 'partials/header.php';
         <div class="col-lg-12 stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">
-                        Customers
-                    </h4>
+                    <div class="card-title" style="display: flex; justify-content: space-between;">
+                        <h2>
+                            Customers
+                        </h2>
+                        <div style="display: flex; background-color: #fff; align-items: flex-start; gap: 1rem;">
+                            <a class="nav-link d-block p-0"  href="index.php">
+                                <span class="btn btn-primary">
+                                    Back to Dashboard
+                                </span>
+                            </a>
+                            <a class="nav-link d-block p-0" href="customer-add.php">
+                                <span class="btn btn-primary">
+                                    Add new customer
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-lg-12 stretch-card">
+            <div class="card">
+                <div class="card-body">
                     <form class="d-flex align-items-center mb-2" action="">
                         <div class="input-group">
                             <label class="input-group-prepend" for="search">
@@ -91,12 +111,13 @@ include_once 'partials/header.php';
                                                 <i class="mdi mdi-pencil btn-icon-append"></i>
                                                 Update
                                             </a>
-                                            <form method="POST" id="delete-customer-<?= $customer->id; ?>"
+                                            <form onsubmit="return confirm('Do you confirm the suppression of the customer ?');"
+                                                  method="POST" id="delete-customer-<?= $customer->id; ?>"
                                                   action="<?= SITE_URL; ?>/dashboard/customer-delete.php">
                                                 <input type="hidden" name="id" value="<?= $customer->id; ?>"/>
                                             </form>
                                             <a href="<?= SITE_URL; ?>/dashboard/customer-delete.php"
-                                               onclick="event.preventDefault(); document.getElementById('delete-customer-<?= $customer->id; ?>')?.submit()"
+                                               onclick="event.preventDefault(); if (confirm('Do you confirm the suppression of the customer ?')) document.getElementById('delete-customer-<?= $customer->id; ?>')?.submit()"
                                                class="btn btn-labeled btn-danger">
                                                 <i class="mdi mdi-trash-can btn-icon-trash"></i>
                                                 Delete
@@ -107,13 +128,6 @@ include_once 'partials/header.php';
                             <?php endforeach; ?>
                             </tbody>
                         </table>
-                        <a class="nav-link d-block" href="index.php" style="padding-left: 0">
-                            <div class="template-demo m-0">
-                                <span class="btn btn-primary">
-                                    Back to Dashboard
-                                </span>
-                            </div>
-                        </a>
                     </div>
                 </div>
             </div>
