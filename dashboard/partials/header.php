@@ -38,10 +38,9 @@ $auth = $_SESSION['user'];
         <ul class="nav">
             <li class="nav-item nav-profile border-bottom">
                 <a href="#" class="nav-link flex-column">
-<!--                    <div class="nav-profile-image">-->
-<!--                        <img src="<?= SITE_URL; ?>/public/assets/images/faces/face1.jpg" alt="profile"/>-->
-                        <!--change to offline or busy as needed-->
-<!--                    </div>-->
+                    <div class="nav-profile-image" style="margin: 10px 0;">
+                        <img src="<?= SITE_URL; ?>/public/img/avatar.png" alt="profile"/>
+                    </div>
                     <div class="nav-profile-text d-flex ms-0 mb-3">
                         Name:
                         <span class="font-weight-semibold ms-1">

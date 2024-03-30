@@ -102,7 +102,11 @@ if ($alert):
                         <tbody>
                         <?php foreach ($products as $product): ?>
                             <tr class="table-info">
-                                <td><?= $product->id; ?></td>
+                                <td>
+                                    <div class="nav-profile-image" style="margin: 10px 0;">
+                                        <img src="<?= SITE_URL; ?>/public/<?= isset($product->image) ? $product->image : 'img/product.jpg'; ?>" alt="profile"/>
+                                    </div>
+                                </td>
                                 <td><?= $product->name; ?></td>
                                 <td><?= $product->quantity; ?></td>
                                 <td><?= $product->price; ?></td>
