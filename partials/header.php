@@ -58,10 +58,8 @@ if (!isset($title)) {
                             <ul id="navigation">
                                 <li><a href="index.php">Home</a></li>
                                 <li><a href="about.php">About</a></li>
-
                                 <li><a href="pricing.php">Pricing</a></li>
                                 <li><a href="gallery.php">Gallery</a></li>
-
                                 <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </nav>
@@ -69,7 +67,7 @@ if (!isset($title)) {
                     <!-- Header-btn -->
                     <div class="header-btns d-none d-lg-block f-right">
                         <?php if (isset($_SESSION['user'])): ?>
-                            <a href="<?= SITE_URL . '/admin/dashboard/index.php'; ?>" class="btn">
+                            <a href="<?= SITE_URL . '/dashboard'; ?>" class="btn">
                                 Dashboard
                             </a>
                             <a href="logout.php" class="btn">

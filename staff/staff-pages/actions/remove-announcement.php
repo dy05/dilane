@@ -3,7 +3,7 @@
 session_start();
 //the isset function to check username is already loged in and stored on the session
 if(!isset($_SESSION['username'])){
-header('location:../index2.php');	
+header('location:../index.php');
 }
 
 if(isset($_GET['id'])){

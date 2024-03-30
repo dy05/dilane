@@ -1,7 +1,7 @@
 <?php
 include_once '../App.php';
 
-//App::redirectIfConnect();
+App::redirectIfConnect();
 $datas = [];
 $errors = [];
 

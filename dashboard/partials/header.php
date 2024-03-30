@@ -158,9 +158,15 @@ $auth = $_SESSION['user'];
                         <img src="<?= SITE_URL; ?>/public/assets/images/logo-mini.svg" alt="logo"/></a>
                 </div>
                 <ul class="navbar-nav">
-                    <li class="nav-item nav-logout d-none d-lg-block">
-                        <a class="nav-link" href="<?= SITE_URL; ?>/logout.php">
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= SITE_URL; ?>/dashboard">
                             <i class="mdi mdi-home-circle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-logout">
+                        <a class="nav-link" href="<?= SITE_URL; ?>/logout.php">
+                            <i class="mdi mdi-account-off"></i>
+                            Deconnexion
                         </a>
                     </li>
                 </ul>

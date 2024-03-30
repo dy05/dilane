@@ -14,7 +14,7 @@ include_once 'partials/header.php';
                 </button>
             </a>
         </div>
-        <a class="ps-3 me-4" href="/dashboard/basic_elements.php">
+        <a class="ps-3 me-4" href="/dashboard/products-add.php">
             <button type="button" class="btn btn-primary mt-2 mt-sm-0 btn-icon-text">
                 <i class="mdi mdi-plus-circle"></i>
                 Add Product
