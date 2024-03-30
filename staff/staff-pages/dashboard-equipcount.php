@@ -3,7 +3,7 @@
 $servername="localhost";
 $uname="root";
 $pass="";
-$db="pharmaceuticalms";
+$db="pharmaceutical";
 
 $conn=mysqli_connect($servername,$uname,$pass,$db);
 

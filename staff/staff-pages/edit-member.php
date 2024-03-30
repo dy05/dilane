@@ -2,7 +2,7 @@
 session_start();
 //the isset function to check username is already loged in and stored on the session
 if(!isset($_SESSION['user_id'])){
-header('location:../index2.php');	
+header('location:../login.php');
 }
 ?>
 
@@ -69,7 +69,7 @@ header('location:../index2.php');
                 <tr>
                   <th>#</th>
                   <th>Fullname</th>
-                  <th>Username</th>
+                  <th>username</th>
                   <th>Gender</th>
                   <th>Contact Number</th>
                   <th>D.O.R</th>

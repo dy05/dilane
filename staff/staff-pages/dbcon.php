@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","root","","pharmaceuticalms");
+$conn = mysqli_connect("localhost","root","","pharmaceutical");
 
 // Check connection
 if (mysqli_connect_errno())

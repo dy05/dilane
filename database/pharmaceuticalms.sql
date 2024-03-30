@@ -57,9 +57,9 @@ CREATE TABLE `product` (
 CREATE TABLE `user` (
   `id` int(255) NOT NULL,
   `Name` varchar(255) DEFAULT NULL,
-  `Phone_N°` int(255) DEFAULT NULL,
+  `phone` int(255) DEFAULT NULL,
   `Username` varchar(255) DEFAULT NULL,
-  `usertype` varchar(255) DEFAULT 'customer',
+  `role` varchar(255) DEFAULT 'customer',
   `Profession` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -68,7 +68,7 @@ CREATE TABLE `user` (
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id`, `Name`, `Phone_N°`, `Username`, `usertype`, `Profession`, `password`) VALUES
+INSERT INTO `user` (`id`, `Name`, `phone`, `Username`, `role`, `Profession`, `password`) VALUES
 (1, 'Admin', 658183169, 'Admin', 'Admin', NULL, '123456');
 
 --

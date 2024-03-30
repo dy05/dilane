@@ -2,7 +2,7 @@
 session_start();
 //the isset function to check username is already loged in and stored on the session
 if(!isset($_SESSION['user_id'])){
-header('location:../index2.php');	
+header('location:../login.php');
 }
 ?>
 
@@ -60,9 +60,9 @@ header('location:../index2.php');
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label">Username :</label>
+              <label class="control-label">username :</label>
               <div class="controls">
-                <input type="text" class="span11" name="username" placeholder="Username" />
+                <input type="text" class="span11" name="username" placeholder="username" />
               </div>
             </div>
             <div class="control-group">

@@ -1,0 +1,7 @@
+.login-bg {
+    background-image: url('/public/assets2/img/gallery/gallery3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

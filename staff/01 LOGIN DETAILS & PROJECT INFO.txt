@@ -5,8 +5,8 @@
 
 
 
-Username: franck
+username: franck
 Password: franck
 
-Username: john
+username: john
 Password: john
