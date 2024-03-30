@@ -60,7 +60,7 @@ $auth = $_SESSION['user'];
                 <a class="nav-link d-block" href="<?= SITE_URL; ?>">
 <!--                    <img class="sidebar-brand-logo" src="<?= SITE_URL; ?>/public/assets/images/logo.svg" alt=""/>-->
 <!--                    <img class="sidebar-brand-logomini" src="<?= SITE_URL; ?>/public/assets/images/logo-mini.svg" alt=""/>-->
-                    <div class="small font-weight-light pt-1">Dashboard</div>
+                    <div class="small font-weight-light pt-1">Home</div>
                 </a>
                 <!--                <form class="d-flex align-items-center" action="#">
                                     <div class="input-group">
@@ -101,7 +101,7 @@ $auth = $_SESSION['user'];
             <li class="nav-item <?= $menu === 'infos' ? 'active' : ''; ?>">
                 <a class="nav-link" href="<?= SITE_URL; ?>/dashboard/infos-list.php">
                     <i class="mdi mdi-compass-outline menu-icon"></i>
-                    <span class="menu-title">Statistics</span>
+                    <span class="menu-title">Get in touch info</span>
                 </a>
             </li>
             <li class="nav-item">

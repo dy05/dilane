@@ -1,4 +1,20 @@
 <?php
+include_once '../App.php';
+$infosCount = 0;
+$ordersCount = 0;
+$productsCount = 0;
+$customersCount = 0;
+$errors = [];
+try {
+    $pdo = App::getPDO();
+    $query  = $pdo->query("SELECT id FROM user WHERE role = 'customer'")->rowCount();
+    $customersCount = $query;
+    $query  = $pdo->query("SELECT id FROM product")->rowCount();
+    $productsCount = $query;
+} catch (Exception $exc) {
+    $errors[] = 'Unexpected error.';
+//    $errors[] = $exc->getMessage();
+}
 include_once 'partials/header.php';
 ?>
 <div class="page-header flex-wrap">
@@ -14,7 +30,7 @@ include_once 'partials/header.php';
                 </button>
             </a>
         </div>
-        <a class="ps-3 me-4" href="/dashboard/products-add.php">
+        <a class="ps-3 me-4" href="/dashboard/product-add.php">
             <button type="button" class="btn btn-primary mt-2 mt-sm-0 btn-icon-text">
                 <i class="mdi mdi-plus-circle"></i>
                 Add Product
@@ -35,7 +51,9 @@ include_once 'partials/header.php';
                             <div class="color-card primary m-auto">
                                 <i class="mdi mdi-clock-outline"></i>
                                 <p class="font-weight-semibold mb-0">Registered Customers</p>
-                                <span class="small">01</span>
+                                <span class="small">
+                                    <?= $customersCount < 100 ? ($customersCount < 1 ? 0 : sprintf("%02d", $customersCount)) : $customersCount; ?>
+                                </span>
                             </div>
                         </a>
                     </div>
@@ -54,7 +72,9 @@ include_once 'partials/header.php';
                             <div class="color-card bg-success m-auto">
                                 <i class="mdi mdi-plus-circle"></i>
                                 <p class="font-weight-semibold mb-0">Total products</p>
-                                <span class="small">01</span>
+                                <span class="small">
+                                    <?= $productsCount < 100 ? ($productsCount < 1 ? 0 : sprintf("%02d", $productsCount)) : $productsCount; ?>
+                                </span>
                             </div>
                         </a>
                     </div>
@@ -72,8 +92,10 @@ include_once 'partials/header.php';
                         <a class="nav-link d-block" href="/dashboard/orders-list.php">
                             <div class="color-card bg-info m-auto">
                                 <i class="mdi mdi-trophy-outline"></i>
-                                <p class="font-weight-semibold mb-0">Number of order</p>
-                                <span class="small">01</span>
+                                <p class="font-weight-semibold mb-0">Number of orders</p>
+                                <span class="small">
+                                    <?= $ordersCount < 100 ? ($ordersCount < 1 ? 0 : sprintf("%02d", $ordersCount)) : $ordersCount; ?>
+                                </span>
                             </div>
                         </a>
                     </div>
@@ -92,7 +114,9 @@ include_once 'partials/header.php';
                             <div class="color-card bg-danger m-auto">
                                 <i class="mdi mdi-presentation"></i>
                                 <p class="font-weight-semibold mb-0">Get in touch info</p>
-                                <span class="small">01</span>
+                                <span class="small">
+                                    <?= $infosCount < 100 ? ($infosCount < 1 ? 0 : sprintf("%02d", $infosCount)) : $infosCount; ?>
+                                </span>
                             </div>
                         </a>
                     </div>

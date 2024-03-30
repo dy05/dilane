@@ -5,8 +5,7 @@ App::redirectIfNotConnect();
 $pdo = App::getPDO();
 $user = $_SESSION['user'];
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT * FROM user WHERE id != " . $user->id;
-// $query = "SELECT * FROM user WHERE id != " . $user->id . " AND role = 'customer'";
+$query = "SELECT * FROM user WHERE id != " . $user->id . " AND role = 'customer'";
 if (!empty($search)) {
     $query .= " AND (name like '%" . $search . "%'";
     $query .= " OR username like '%" . $search . "%'";
@@ -15,22 +14,22 @@ if (!empty($search)) {
 $customers = $pdo->query($query)->fetchAll();
 include_once 'partials/header.php';
 ?>
-    <?php
-        $alert = null;
-        $success = true;
-        if (isset($_SESSION['success'])) {
-            $alert = $_SESSION['success'];
-            unset($_SESSION['success']);
-        } else if (isset($_SESSION['error'])) {
-            $alert = $_SESSION['error'];
-            unset($_SESSION['error']);
-            $success = false;
-        }
+<?php
+$alert = null;
+$success = true;
+if (isset($_SESSION['success'])) {
+    $alert = $_SESSION['success'];
+    unset($_SESSION['success']);
+} else if (isset($_SESSION['error'])) {
+    $alert = $_SESSION['error'];
+    unset($_SESSION['error']);
+    $success = false;
+}
 
-        if ($alert):
+if ($alert):
     ?>
     <div class="row" style="margin: 0 30px; position: relative;" id="message-alert">
-        <div class="alert alert-<?= $success ? 'info' : 'danger';?> alert-dismissible" role="alert">
+        <div class="alert alert-<?= $success ? 'info' : 'danger'; ?> alert-dismissible" role="alert">
             <div style="width: 90%;">
                 <?= $alert; ?>
             </div>
@@ -41,7 +40,7 @@ include_once 'partials/header.php';
             </button>
         </div>
     </div>
-    <?php endif; ?>
+<?php endif; ?>
 
     <div class="content-wrapper">
         <div class="col-lg-12 stretch-card">
@@ -52,7 +51,7 @@ include_once 'partials/header.php';
                             Customers
                         </h2>
                         <div style="display: flex; background-color: #fff; align-items: flex-start; gap: 1rem;">
-                            <a class="nav-link d-block p-0"  href="index.php">
+                            <a class="nav-link d-block p-0" href="index.php">
                                 <span class="btn btn-primary">
                                     Back to Dashboard
                                 </span>
@@ -107,7 +106,8 @@ include_once 'partials/header.php';
                                     <td>
                                         <div class="template-demo"
                                              style="display: flex !important; justify-items: start !important;">
-                                            <a href="#" class="btn btn-danger btn-icon-text">
+                                            <a href="<?= SITE_URL; ?>/dashboard/customer-edit.php?id=<?= $customer->id; ?>"
+                                               class="btn btn-danger btn-icon-text">
                                                 <i class="mdi mdi-pencil btn-icon-append"></i>
                                                 Update
                                             </a>
