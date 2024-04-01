@@ -17,7 +17,7 @@ include('dbcon.php'); ?>
 
 </head>
 
-<body style=" background-image: url(../assets2/img/gallery/gallery3.jpg);
+<body style=" background-image: url('<?= SITE_URL; ?>/public/assets2/img/gallery/gallery3.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

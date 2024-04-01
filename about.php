@@ -4,7 +4,7 @@ include_once 'partials/header.php';
 ?>
 <main style="background-color: rgb(201, 167, 103);">
     <!--? Hero Start -->
-    <div class="slider-area2" style="background-image: url(assets2/img/gallery/gallery3.jpg);">
+    <div class="slider-area2" style="background-image: url(<?= SITE_URL; ?>/public/assets2/img/gallery/gallery3.jpg);">
         <div class="slider-height2 d-flex align-items-center">
             <div class="container">
                 <div class="row">
@@ -26,7 +26,7 @@ include_once 'partials/header.php';
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
                         <div class="cat-icon">
-                            <img src="assets2/img/gallery/team1.png" alt="">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/team1.png" alt="">
                         </div>
                         <div class="cat-cap">
                             <h5><a href="services.php">Huge Drugs Sales</a></h5>
@@ -37,7 +37,7 @@ include_once 'partials/header.php';
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="cat-icon">
-                            <img src="assets2/img/gallery/team2.png" alt="">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/team2.png" alt="">
                         </div>
                         <div class="cat-cap">
                             <h5><a href="services.php">Malaria Drugs</a></h5>
@@ -48,7 +48,7 @@ include_once 'partials/header.php';
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="cat-icon">
-                            <img src="assets2/img/gallery/team3.png" alt="">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/team3.png" alt="">
                         </div>
                         <div class="cat-cap">
                             <h5><a href="services.php">Stomach Irritation</a></h5>
@@ -66,7 +66,7 @@ include_once 'partials/header.php';
             <div class="right-content2">
                 <!-- img -->
                 <div class="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                    <img src="assets2/img/gallery/about2.jpg" alt="">
+                    <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/about2.jpg" alt="">
                 </div>
             </div>
             <div class="left-content2">
@@ -94,7 +94,7 @@ include_once 'partials/header.php';
                     <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="assets2/img/gallery/blog1.png" alt="">
+                                <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/blog1.png" alt="">
                             </div>
                             <div class="blog-cap">
                                 <span>Pharmaceutical Massif solutions</span>
@@ -107,7 +107,7 @@ include_once 'partials/header.php';
                     <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="assets2/img/gallery/blog2.png" alt="">
+                                <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/blog2.png" alt="">
                             </div>
                             <div class="blog-cap">
                                 <span>Pharmaceutical Antibiotics</span>
@@ -127,7 +127,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets2/img/icon/icon1.svg" alt="">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon1.svg" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -138,7 +138,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets2/img/icon/icon2.svg" alt="">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon2.svg" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
@@ -150,7 +150,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets2/img/icon/icon3.svg" alt="">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon3.svg" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>

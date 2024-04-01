@@ -3,7 +3,7 @@
     <li class="nav-item nav-profile border-bottom">
       <a href="#" class="nav-link flex-column">
         <div class="nav-profile-image">
-          <img src="assets/images/faces/face1.jpg" alt="profile" />
+          <img src="<?= SITE_URL; ?>/public/assets/images/faces/face1.jpg" alt="profile" />
           <!--change to offline or busy as needed-->
         </div>
         <div class="nav-profile-text d-flex ms-0 mb-3 flex-column">
@@ -14,8 +14,8 @@
     </li>
     <li class="nav-item pt-3">
       <a class="nav-link d-block" href="index.php">
-        <img class="sidebar-brand-logo" src="assets/images/logo.svg" alt="" />
-        <img class="sidebar-brand-logomini" src="assets/images/logo-mini.svg" alt="" />
+        <img class="sidebar-brand-logo" src="<?= SITE_URL; ?>/public/assets/images/logo.svg" alt="" />
+        <img class="sidebar-brand-logomini" src="<?= SITE_URL; ?>/public/assets/images/logo-mini.svg" alt="" />
         <div class="small font-weight-light pt-1">Admin Dashboard</div>
       </a>
       <form class="d-flex align-items-center" action="#">

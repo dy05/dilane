@@ -4,7 +4,7 @@ include_once 'partials/header.php';
 ?>
 <main style="background-color: rgb(201, 167, 103);">
     <!--? Hero Start -->
-    <div class="slider-area2" style="background-image: url(assets2/img/gallery/gallery3.jpg);">
+    <div class="slider-area2" style="background-image: url(<?= SITE_URL; ?>/public/assets2/img/gallery/gallery3.jpg);">
         <div class="slider-height2 d-flex align-items-center">
             <div class="container">
                 <div class="row">
@@ -38,7 +38,7 @@ include_once 'partials/header.php';
                                 <p class="mb-25">High Stock</p>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>AMOXIVILLIN AND CLAVULANATE POTASSIUM 1G TABLET B/14 2000FCFA</p>
@@ -46,7 +46,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>PENICILLIN V POTASSIUM TABLET 250mg B/30 600FCFA</p>
@@ -54,7 +54,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>AMOXIVILLIN CAPSULE 500MG B/100 2150FCFA</p>
@@ -62,7 +62,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>CIPROFLOXACIN TABLET 500MG B/100 2500FCFA</p>
@@ -70,7 +70,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features mb-20">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>COTRIMOXAZOLE 480MG B/100 1175FCFA</p>
@@ -90,7 +90,7 @@ include_once 'partials/header.php';
                                 <p class="mb-25">High Stock </p>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>GANTS D'EXAMEN EN NITRILLE TAILLE L B/100 2500FCFA</p>
@@ -98,7 +98,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>GANTS D'EXAMEN EN NITRILLE TAILLE M B/100 2500FCFA</p>
@@ -106,7 +106,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>GANTS D'EXAMEN EN NITRILLE TAILLE S B/100 2500FCFA</p>
@@ -114,7 +114,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>GANTS STERILE POUDRES LATEX TAILLE 6.5 B/100 7500FCFA</p>
@@ -122,7 +122,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features mb-20">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>GANTS STERILE POUDRES LATEX TAILLE 7.5 B/100 7500FCFA</p>
@@ -142,7 +142,7 @@ include_once 'partials/header.php';
                                 <p class="mb-25">High Stock </p>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>GLUCOSE 5% SODIUM CHLORIDE 0.9% Injection-500ml:25g+4.5g Btl/500ml 385FCFA</p>
@@ -150,7 +150,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>GLUCOSE INJECTION 10% 500ml:50g Btl/500ml 385FCFA</p>
@@ -158,7 +158,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>MANNITOL 20% 250ml Glass bottle Btl/250ml 850FCFA</p>
@@ -166,7 +166,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>RINGER LACTATE Btl/500ml 380FCFA</p>
@@ -174,7 +174,7 @@ include_once 'partials/header.php';
                                 </div>
                                 <div class="single-features mb-20">
                                     <div class="features-icon">
-                                        <img src="assets2/img/icon/check.svg" alt="">
+                                        <img src="<?= SITE_URL; ?>/public/assets2/img/icon/check.svg" alt="">
                                     </div>
                                     <div class="features-caption">
                                         <p>WATER FOR INJECTION 10ml B/10amps 300FCFA </p>
@@ -196,7 +196,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets2/img/icon/icon1.svg" alt="">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon1.svg" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -207,7 +207,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets2/img/icon/icon2.svg" alt="">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon2.svg" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
@@ -219,7 +219,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets2/img/icon/icon3.svg" alt="">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon3.svg" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>

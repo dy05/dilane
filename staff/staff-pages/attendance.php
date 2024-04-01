@@ -20,7 +20,7 @@ header('location:../login.php');
 <link rel="stylesheet" href="../css/matrix-media.css" />
 <link href="../font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" type="image/x-icon" href="assets2/img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="<?= SITE_URL; ?>/public/assets2/img/favicon.ico">
 </head>
 <body>
 

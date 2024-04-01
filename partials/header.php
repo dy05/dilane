@@ -48,7 +48,7 @@ if (!isset($title)) {
                 <div class="menu-wrapper d-flex align-items-center justify-content-between">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.php">
+                        <a href="<?= SITE_URL; ?>/index.php">
                             Logo
                         </a>
                     </div>
@@ -56,11 +56,11 @@ if (!isset($title)) {
                     <div class="main-menu f-right d-none d-lg-block">
                         <nav>
                             <ul id="navigation">
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="about.php">About</a></li>
-                                <li><a href="pricing.php">Pricing</a></li>
-                                <li><a href="gallery.php">Gallery</a></li>
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="<?= SITE_URL; ?>/index.php">Home</a></li>
+                                <li><a href="<?= SITE_URL; ?>/about.php">About</a></li>
+                                <li><a href="<?= SITE_URL; ?>/pricing.php">Pricing</a></li>
+                                <li><a href="<?= SITE_URL; ?>/gallery.php">Gallery</a></li>
+                                <li><a href="<?= SITE_URL; ?>/contact.php">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -70,11 +70,11 @@ if (!isset($title)) {
                             <a href="<?= SITE_URL . '/dashboard'; ?>" class="btn">
                                 Dashboard
                             </a>
-                            <a href="logout.php" class="btn">
+                            <a href="<?= SITE_URL; ?>/logout.php" class="btn">
                                 Sign out
                             </a>
                         <?php else: ?>
-                            <a href="login.php" class="btn">
+                            <a href="<?= SITE_URL; ?>/login.php" class="btn">
                                 Sign in
                             </a>
                         <?php endif; ?>

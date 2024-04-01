@@ -4,7 +4,7 @@
       <span class="mdi mdi-chevron-double-left"></span>
     </button>
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-      <a class="navbar-brand brand-logo-mini" href="index.php"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+      <a class="navbar-brand brand-logo-mini" href="index.php"><img src="<?= SITE_URL; ?>/public/assets/images/logo-mini.svg" alt="logo" /></a>
     </div>
     <ul class="navbar-nav">
       <li class="nav-item dropdown">
@@ -16,7 +16,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item preview-item">
             <div class="preview-thumbnail">
-              <img src="assets/images/faces/face1.jpg" alt="image" class="profile-pic">
+              <img src="<?= SITE_URL; ?>/public/assets/images/faces/face1.jpg" alt="image" class="profile-pic">
             </div>
             <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
               <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
@@ -26,7 +26,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item preview-item">
             <div class="preview-thumbnail">
-              <img src="assets/images/faces/face6.jpg" alt="image" class="profile-pic">
+              <img src="<?= SITE_URL; ?>/public/assets/images/faces/face6.jpg" alt="image" class="profile-pic">
             </div>
             <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
               <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
@@ -36,7 +36,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item preview-item">
             <div class="preview-thumbnail">
-              <img src="assets/images/faces/face7.jpg" alt="image" class="profile-pic">
+              <img src="<?= SITE_URL; ?>/public/assets/images/faces/face7.jpg" alt="image" class="profile-pic">
             </div>
             <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
               <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>

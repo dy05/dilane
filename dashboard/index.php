@@ -20,17 +20,17 @@ include_once 'partials/header.php';
 <div class="page-header flex-wrap">
     <div class="header-right d-flex flex-wrap mt-2 mt-sm-0">
         <div class="d-flex align-items-center">
-            <a href="/dashboard">
+            <a href="<?= SITE_URL; ?>/dashboard">
                 <p class="m-0 pe-3">Dashboard</p>
             </a>
-            <a class="ps-3 me-4" href="/dashboard/customer-add.php">
+            <a class="ps-3 me-4" href="<?= SITE_URL; ?>/dashboard/customer-add.php">
                 <button type="button" class="btn btn-primary mt-2 mt-sm-0 btn-icon-text">
                     <i class="mdi mdi-plus-circle"></i>
                     Add New Customer
                 </button>
             </a>
         </div>
-        <a class="ps-3 me-4" href="/dashboard/product-add.php">
+        <a class="ps-3 me-4" href="<?= SITE_URL; ?>/dashboard/product-add.php">
             <button type="button" class="btn btn-primary mt-2 mt-sm-0 btn-icon-text">
                 <i class="mdi mdi-plus-circle"></i>
                 Add Product

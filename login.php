@@ -58,7 +58,6 @@ try {
     <link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/matrix-login.css"/>
     <link href="<?= SITE_URL; ?>/public/font-awesome/css/font-awesome.css" rel="stylesheet"/>
 <!--    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets2/img/favicon.ico">
     <style>
         .main_input_box {
             display: flex;
@@ -66,7 +65,7 @@ try {
             justify-content: center;
         }
         .bg-class {
-            background-image: url('public/assets2/img/gallery/gallery3.jpg');
+            background-image: url(<?= SITE_URL; ?>'/public/assets2/img/gallery/gallery3.jpg');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -120,17 +119,17 @@ try {
                 </div>
             </div>
         </div>
-        <div class="form-actions">
-            <span class="pull-left">
+        <div class="form-actions" style="display: flex; padding: 2rem !important;">
+            <div style="text-align: left; width: 50%;">
                 <a href="register.php" class="flip-link btn btn-info" id="to-recover">
                     Register here
                 </a>
-            </span>
-            <span class="pull-right">
+            </div>
+            <div style="text-align: right; width: 50%;">
                 <button type="submit" name="login" class="btn btn-success">
                     Login Now
                 </button>
-            </span>
+            </div>
         </div>
 
         <div class="text-center pb-5">

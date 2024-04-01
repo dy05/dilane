@@ -49,7 +49,7 @@ include_once 'partials/header.php';
 ?>
 <main style="background-color: rgb(96, 241, 34);">
     <!--? Hero Start -->
-    <div class="slider-area2" style="background-image: url(assets2/img/gallery/gallery3.jpg);">
+    <div class="slider-area2" style="background-image: url(<?= SITE_URL; ?>/public/assets2/img/gallery/gallery3.jpg);">
         <div class="slider-height2 d-flex align-items-center">
             <div class="container">
                 <div class="row">
@@ -144,7 +144,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets2/img/icon/icon1.svg" alt="image"/>
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon1.svg" alt="image"/>
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -155,7 +155,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets2/img/icon/icon2.svg" alt="image"/>
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon2.svg" alt="image"/>
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
@@ -167,7 +167,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets2/img/icon/icon3.svg" alt="image"/>
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon3.svg" alt="image"/>
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>

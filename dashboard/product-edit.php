@@ -126,8 +126,6 @@ try {
         }
     }
 } catch (Exception $exc) {
-    var_dump($exc->getMessage());
-    die();
     $errors[] = 'Unexpected error.';
 }
 $datas = $product;
@@ -295,10 +293,7 @@ include_once 'partials/header.php';
 
                 let _deletedImage = document.getElementById('deletedImage');
                 if (_deletedImage) {
-                    console.log('_deletedImage.checked')
-                    console.log(_deletedImage.checked)
                     _deletedImage.checked = false;
-                    console.log(_deletedImage.checked)
                 }
             });
         }

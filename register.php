@@ -102,7 +102,7 @@ try {
     <link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/matrix-login.css"/>
     <link href="<?= SITE_URL; ?>/public/font-awesome/css/font-awesome.css" rel="stylesheet"/>
 <!--    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets2/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= SITE_URL; ?>/public/assets2/img/favicon.ico">
     <style>
         .main_input_box {
             display: flex;
@@ -122,12 +122,24 @@ try {
         .pb-5 {
             padding-bottom: 1.25rem;
         }
+        .px-2 {
+            width: 80%;
+            margin: auto;
+        }
+        .px-2 .main_input_box {
+            padding: 0 !important;
+            justify-content: left;
+        }
+        .px-2 .main_input_box input {
+            width: calc(100% - 30px) !important;
+        }
     </style>
 </head>
 <body class="bg-class">
 <div id="loginbox">
-    <form id="loginform" class="form-vertical" action="" method="POST" style="background-color: #fff ;padding: 20px !important;">
-        <p class="normal_text">
+    <form id="loginform" class="form-vertical" action="" method="POST" 
+          style="padding: 0 !important; display: flex; justify-content: center; flex-direction: column;">
+        <p class="normal_text" style="background-color: #000;">
             Enter your details below
         </p>
 
@@ -150,7 +162,7 @@ try {
             </div>
         <?php endif; ?>
 
-        <div class="controls">
+        <div class="controls px-2">
             <div class="main_input_box">
                 <label for="name" class="add-on bg_lo"><i class="icon-pencil"></i></label>
                 <input type="text" name="name" value="<?= isset($datas['name']) ? $datas['name'] : ''; ?>" id="name" placeholder="name"/>
@@ -159,7 +171,7 @@ try {
 
         <br/>
 
-        <div class="controls">
+        <div class="controls px-2">
             <div class="main_input_box">
                 <label for="email" class="add-on bg_lo"><i class="icon-envelope"></i></label>
                 <input type="text" name="email" value="<?= isset($datas['email']) ? $datas['email'] : ''; ?>" id="email" placeholder="email"/>
@@ -168,7 +180,7 @@ try {
 
         <br/>
 
-        <div class="controls">
+        <div class="controls px-2">
             <div class="main_input_box">
                 <label for="phone" class="add-on bg_lo"><i class="icon-leaf"></i></label>
                 <input type="text" name="phone" value="<?= isset($datas['phone']) ? $datas['phone'] : ''; ?>" id="phone" placeholder="+237 658183169"/>
@@ -177,7 +189,7 @@ try {
 
 <!--        <br/>-->
 <!---->
-<!--        <div class="controls">-->
+<!--        <div class="controls px-2">-->
 <!--            <div class="main_input_box">-->
 <!--                <label for="role" class="add-on bg_lo"><i class="icon-leaf"></i></label>-->
 <!--                <input type="text" name="role" id="role" placeholder="role"/>-->
@@ -191,7 +203,7 @@ try {
 
         <br/>
 
-        <div class="controls">
+        <div class="controls px-2">
             <div class="main_input_box">
                 <label for="password" class="add-on bg_lo"><i class="icon-asterisk"></i></label>
                 <input type="password" name="password" id="password" placeholder="password" required/>
@@ -200,7 +212,7 @@ try {
 
         <br/>
 
-        <div class="controls" style="padding: 0 50px;">
+        <div class="controls px-2">
             <div class="main_input_box">
                 <label for="gender" class="hidden d-none"></label>
                 <select name="gender" id="gender" style="width: 100%;" required>
@@ -212,7 +224,7 @@ try {
 
         <br/>
 
-        <div class="controls" style="padding: 0 50px;">
+        <div class="controls px-2">
             <div class="main_input_box">
                 <label for="profession" class="hidden d-none"></label>
                 <select name="profession" id="profession" style="width: 100%;" required>
@@ -227,7 +239,7 @@ try {
 
         <br/>
 
-        <!-- <div class="controls">
+        <!-- <div class="controls px-2">
             <div class="main_input_box">
             <select name="services" required="required" id="select">
             <option selected="true" disabled="disabled">Select Service</option>
@@ -238,14 +250,14 @@ try {
             </div>
         </div> -->
 
-        <div class="form-actions" style="display: flex; padding: 0 !important;">
-            <div style="text-align: left; padding: 20px 40px; width: 50%;">
+        <div class="form-actions" style="display: flex; padding: 2rem !important;">
+            <div style="text-align: left; width: 50%;">
                 <a href="<?= SITE_URL . '/login.php'; ?>"
                    class="flip-link btn btn-success">
                     &laquo; Back to login
                 </a>
             </div>
-            <div style="text-align: right; padding: 20px 40px; width: 50%;">
+            <div style="text-align: right; width: 50%;">
                 <button class="btn btn-info" type="submit">
                     Submit
                 </button>

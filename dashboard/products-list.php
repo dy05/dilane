@@ -4,6 +4,7 @@ include_once '../App.php';
 App::redirectIfNotConnect();
 $pdo = App::getPDO();
 $user = $_SESSION['user'];
+$isAdmin = strtolower($user->role) === 'admin';
 $search = isset($_GET['search']) ? $_GET['search'] : '';
 $query = "SELECT *, DATE_FORMAT(expiring_date, '%d-%m-%Y') as expiring_date FROM product";
 if (!empty($search)) {
@@ -57,7 +58,7 @@ if ($alert):
                                 Back to Dashboard
                             </span>
                         </a>
-                        <?php if (strtolower($user->role) === 'admin'): ?>
+                        <?php if ($isAdmin): ?>
                         <a class="nav-link d-block p-0" href="product-add.php">
                             <span class="btn btn-primary">
                                 Add new product
@@ -82,11 +83,12 @@ if ($alert):
                                name="search" placeholder="Search"/>
                         <button type="submit"
                            class="btn btn-danger btn-icon-text">
-                            FInd
+                            Find
                         </button>
                     </div>
                 </form>
 
+                <?php if (!$isAdmin): ?>
                 <div class="table-responsive">
                     <table class="table table-bordered">
                         <thead>
@@ -137,6 +139,48 @@ if ($alert):
                         </tbody>
                     </table>
                 </div>
+                <?php else: ?>
+                <div class="row">
+                    <?php foreach ($products as $product): ?>
+                    <div class="col-sm-6 col-xl-3 stretch-card grid-margin">
+                        <div class="card color-card-wrapper">
+                            <div class="card-body">
+                                <img class="img-fluid card-top-img w-100"
+                                     src="<?= SITE_URL; ?>/public/<?= isset($product->image) ? $product->image : 'img/product.jpg'; ?>" alt="image"/>
+                                <div class="d-flex flex-wrap justify-content-around color-card-outer">
+                                    <div class="col-6 mb-4 d-flex">
+                                        <div class="d-flex flex-column color-card primary p-2 mx-auto" style="height: 12rem; width: 12rem;">
+                                            <div>
+                                                <span class="d-flex align-items-center">
+                                                    <i class="mdi mdi-clock-outline"></i>
+                                                    <?= $product->expiring_date; ?>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="font-weight-semibold mb-0">
+                                                    <?= substr($product->name, 0, 40); ?>
+                                                    <?= mb_strlen($product->name) > 40 ? '...' : ''; ?>
+                                                </p>
+                                                <p class="font-weight-semibold mb-0">
+                                                    (<?= $product->price; ?> FCFA)
+                                                </p>
+                                                <span class="small">
+                                                    Remaining: <?= $product->quantity; ?>
+                                                </span>
+                                            </div>
+
+                                            <button type="button" class="btn btn-primary" style="margin-top: auto;">
+                                                Add to cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
