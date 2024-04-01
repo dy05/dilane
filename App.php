@@ -1,6 +1,6 @@
 <?php
 session_start();
-const SITE_URL = 'http://localhost:4000';
+const SITE_URL = 'http://localhost:4000/pharmaceuticalms';
 
 class App {
     private static $pdo = null;

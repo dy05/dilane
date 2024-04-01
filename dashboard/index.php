@@ -44,7 +44,7 @@ include_once 'partials/header.php';
         <div class="card color-card-wrapper">
             <div class="card-body">
                 <img class="img-fluid card-top-img w-100"
-                     src="/public/assets/images/dashboard/img_5.jpg" alt="image"/>
+                     src="<?= SITE_URL; ?>/public/assets/images/dashboard/img_5.jpg" alt="image"/>
                 <div class="d-flex flex-wrap justify-content-around color-card-outer">
                     <div class="col-6 p-0 mb-4">
                         <a class="nav-link d-block" href="/dashboard/customers-list.php">
@@ -65,7 +65,7 @@ include_once 'partials/header.php';
         <div class="card color-card-wrapper">
             <div class="card-body">
                 <img class="img-fluid card-top-img w-100"
-                     src="/public/assets/images/dashboard/img_5.jpg" alt="image"/>
+                     src="<?= SITE_URL; ?>/public/assets/images/dashboard/img_5.jpg" alt="image"/>
                 <div class="d-flex flex-wrap justify-content-around color-card-outer">
                     <div class="col-6 p-0 mb-4">
                         <a class="nav-link d-block" href="/dashboard/products-list.php">
@@ -86,7 +86,7 @@ include_once 'partials/header.php';
         <div class="card color-card-wrapper">
             <div class="card-body">
                 <img class="img-fluid card-top-img w-100"
-                     src="/public/assets/images/dashboard/img_5.jpg" alt="image"/>
+                     src="<?= SITE_URL; ?>/public/assets/images/dashboard/img_5.jpg" alt="image"/>
                 <div class="d-flex flex-wrap justify-content-around color-card-outer">
                     <div class="col-6 p-0 mb-4">
                         <a class="nav-link d-block" href="/dashboard/orders-list.php">
@@ -107,7 +107,7 @@ include_once 'partials/header.php';
         <div class="card color-card-wrapper">
             <div class="card-body">
                 <img class="img-fluid card-top-img w-100"
-                     src="/public/assets/images/dashboard/img_5.jpg" alt="image"/>
+                     src="<?= SITE_URL; ?>/public/assets/images/dashboard/img_5.jpg" alt="image"/>
                 <div class="d-flex flex-wrap justify-content-around color-card-outer">
                     <div class="col-6 p-0 mb-4">
                         <a class="nav-link d-block" href="/dashboard/infos-list.php">

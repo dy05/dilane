@@ -10,7 +10,7 @@
                             <!-- logo -->
                             <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                                 <a href="index.php">
-                                    <img src="public/img2/TT.jpg" alt="image"/>
+                                    <img src="<?= SITE_URL; ?>/public/img2/TT.jpg" alt="image"/>
                                 </a>
                             </div>
                             <!-- Menu -->
@@ -25,7 +25,6 @@
                                                 <ul>
                                                     <li><a href="index.php">Home</a></li>
                                                     <li><a href="about.php">About</a></li>
-
                                                     <li><a href="pricing.php">Pricing</a></li>
                                                     <li><a href="gallery.php">Gallery</a></li>
                                                     <li><a href="contact.php">Contact</a></li>
@@ -49,7 +48,7 @@
                                 Copyright &copy; <?= date('Y'); ?>
                                 All rights reserved |
                                 <i class="fa fa-heart" aria-hidden="true"></i>
-                                <a href="<?= SITE_URL . '/admin/login.php'; ?>">Pharmaceuticalms</a>
+                                <a href="<?= SITE_URL . '/dashboard'; ?>">Pharmaceuticalms</a>
                             </p>
                         </div>
                     </div>
@@ -66,44 +65,44 @@
 
 <!-- JS here -->
 
-<script src="public/assets2/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->
-<script src="public/assets2/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="public/assets2/js/popper.min.js"></script>
-<script src="public/assets2/js/bootstrap.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/popper.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/bootstrap.min.js"></script>
 <!-- Jquery Mobile Menu -->
-<script src="public/assets2/js/jquery.slicknav.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/jquery.slicknav.min.js"></script>
 
 <!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="public/assets2/js/owl.carousel.min.js"></script>
-<script src="public/assets2/js/slick.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/owl.carousel.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/slick.min.js"></script>
 <!-- One Page, Animated-HeadLin -->
-<script src="public/assets2/js/wow.min.js"></script>
-<script src="public/assets2/js/animated.headline.js"></script>
-<script src="public/assets2/js/jquery.magnific-popup.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/wow.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/animated.headline.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/jquery.magnific-popup.js"></script>
 
 <!-- Date Picker -->
-<script src="public/assets2/js/gijgo.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/gijgo.min.js"></script>
 <!-- Nice-select, sticky -->
-<script src="public/assets2/js/jquery.nice-select.min.js"></script>
-<script src="public/assets2/js/jquery.sticky.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/jquery.nice-select.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/jquery.sticky.js"></script>
 
 <!-- counter , waypoint,Hover Direction -->
-<script src="public/assets2/js/jquery.counterup.min.js"></script>
-<script src="public/assets2/js/waypoints.min.js"></script>
-<script src="public/assets2/js/jquery.countdown.min.js"></script>
-<script src="public/assets2/js/hover-direction-snake.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/jquery.counterup.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/waypoints.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/jquery.countdown.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/hover-direction-snake.min.js"></script>
 
 <!-- contact js -->
-<script src="public/assets2/js/contact.js"></script>
-<script src="public/assets2/js/jquery.form.js"></script>
-<script src="public/assets2/js/jquery.validate.min.js"></script>
-<script src="public/assets2/js/mail-script.js"></script>
-<script src="public/assets2/js/jquery.ajaxchimp.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/contact.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/jquery.form.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/jquery.validate.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/mail-script.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/jquery.ajaxchimp.min.js"></script>
 
 <!-- Jquery Plugins, main Jquery -->
-<script src="public/assets2/js/plugins.js"></script>
-<script src="public/assets2/js/main.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/plugins.js"></script>
+<script src="<?= SITE_URL; ?>/public/assets2/js/main.js"></script>
 
 </body>
 </html>

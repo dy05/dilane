@@ -13,13 +13,13 @@ session_start();
 <title>pharmaceutical System Staff A/C</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="/public/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/public/css/bootstrap-responsive.min.css" />
-<link rel="stylesheet" href="/public/css/fullcalendar.css" />
-<link rel="stylesheet" href="/public/css/matrix-style.css" />
-<link rel="stylesheet" href="/public/css/matrix-media.css" />
-<link href="/public/font-awesome/css/font-awesome.css" rel="stylesheet" />
-<link rel="stylesheet" href="/public/css/jquery.gritter.css" />
+<link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/bootstrap.min.css" />
+<link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/fullcalendar.css" />
+<link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/matrix-style.css" />
+<link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/matrix-media.css" />
+<link href="<?= SITE_URL; ?>/public/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" type="image/x-icon" href="assets2/img/favicon.ico">
 </head>
@@ -180,27 +180,27 @@ session_start();
 
 <!--end-Footer-part-->
 
-<script src="/public/js/excanvas.min.js"></script>
-<script src="/public/js/jquery.min.js"></script>
-<script src="/public/js/jquery.ui.custom.js"></script>
-<script src="/public/js/bootstrap.min.js"></script>
-<script src="/public/js/jquery.flot.min.js"></script>
-<script src="/public/js/jquery.flot.resize.min.js"></script>
-<script src="/public/js/jquery.peity.min.js"></script>
-<script src="/public/js/fullcalendar.min.js"></script>
-<script src="/public/js/matrix.js"></script>
-<script src="/public/js/matrix.dashboard.js"></script>
-<script src="/public/js/jquery.gritter.min.js"></script>
-<!-- <script src="/public/js/matrix.interface.js"></script>  -->
-<script src="/public/js/matrix.chat.js"></script>
-<script src="/public/js/jquery.validate.js"></script>
-<script src="/public/js/matrix.form_validation.js"></script>
-<script src="/public/js/jquery.wizard.js"></script>
-<script src="/public/js/jquery.uniform.js"></script>
-<script src="/public/js/select2.min.js"></script>
-<script src="/public/js/matrix.popover.js"></script>
-<script src="/public/js/jquery.dataTables.min.js"></script>
-<script src="/public/js/matrix.tables.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/excanvas.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.ui.custom.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/bootstrap.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.flot.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.flot.resize.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.peity.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/fullcalendar.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/matrix.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/matrix.dashboard.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.gritter.min.js"></script>
+<!-- <script src="<?= SITE_URL; ?>/public/js/matrix.interface.js"></script>  -->
+<script src="<?= SITE_URL; ?>/public/js/matrix.chat.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.validate.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/matrix.form_validation.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.wizard.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.uniform.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/select2.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/matrix.popover.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.dataTables.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/matrix.tables.js"></script>
 
 <script type="text/javascript">
  

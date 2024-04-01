@@ -4,7 +4,8 @@ include_once 'partials/header.php';
 ?>
 <main style="background-color: rgb(23, 231, 23);">
     <!--? slider Area Start-->
-    <div class="slider-area position-relative" style="background-image: url('/public/assets2/img/gallery/gallery3.jpg');">
+    <div class="slider-area position-relative"
+         style="background-image: url('<?= SITE_URL; ?>/public/assets2/img/gallery/gallery3.jpg');">
         <div class="slider-active">
             <!-- Single Slider -->
             <div class="single-slider slider-height d-flex align-items-center">
@@ -37,7 +38,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-6 col-lg-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="public/assets2/img/gallery/drug1.jpg" alt="image">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/drug1.jpg" alt="image"/>
                             <div class="topic-content-box">
                                 <div class="topic-content">
                                     <h3>Best Medicine Supplier</h3>
@@ -52,7 +53,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-6 col-lg-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="public/assets2/img/gallery/cat2.jpg" alt="image">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/cat2.jpg" alt="image"/>
                             <div class="topic-content-box">
                                 <div class="topic-content">
                                     <h3>Enjoy pharmaceutical products</h3>
@@ -83,7 +84,7 @@ include_once 'partials/header.php';
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <div class="cat-icon">
-                            <img src="public/assets2/img/gallery/team1.jpg" alt="image">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/team1.jpg" alt="image"/>
                         </div>
                         <div class="cat-cap">
                             <h5><a href="pricing.php">Pharmaceutical First Group</a></h5>
@@ -94,7 +95,7 @@ include_once 'partials/header.php';
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="cat-icon">
-                            <img src="public/assets2/img/gallery/team2.jpg" alt="image">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/team2.jpg" alt="image"/>
                         </div>
                         <div class="cat-cap">
                             <h5><a href="pricing.php">Drugs For Body Health</a></h5>
@@ -105,7 +106,7 @@ include_once 'partials/header.php';
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="cat-icon">
-                            <img src="public/assets2/img/gallery/team3.jpeg" alt="image">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/team3.jpeg" alt="image"/>
                         </div>
                         <div class="cat-cap">
                             <h5><a href="gallery.php">Good Drugs</a></h5>
@@ -124,7 +125,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img"
-                             style="background-image: url('/public/assets2/img/gallery/gallery1.jpeg');"></div>
+                             style="background-image: url('<?= SITE_URL; ?>/public/assets2/img/gallery/gallery1.jpeg');"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Efficient Drugs </h3>
@@ -136,7 +137,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img"
-                             style="background-image: url('/public/assets2/img/gallery/gallery5.jpg');"></div>
+                             style="background-image: url('<?= SITE_URL; ?>/public/assets2/img/gallery/gallery5.jpg');"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3> Good Tablets</h3>
@@ -148,7 +149,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img"
-                             style="background-image: url('/public/assets2/img/gallery/gallery3.jpg');"></div>
+                             style="background-image: url('<?= SITE_URL; ?>/public/assets2/img/gallery/gallery3.jpg');"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Efficient Medicine </h3>
@@ -160,7 +161,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img"
-                             style="background-image: url('/public/assets2/img/gallery/gallery4.jpg');"></div>
+                             style="background-image: url('<?= SITE_URL; ?>/public/assets2/img/gallery/gallery4.jpg');"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Good Tablets </h3>
@@ -172,7 +173,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img"
-                             style="background-image: url('/public/assets2/img/gallery/gallery5.jpg');"></div>
+                             style="background-image: url('<?= SITE_URL; ?>/public/assets2/img/gallery/gallery5.jpg');"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Good Tablets </h3>
@@ -184,7 +185,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img"
-                             style="background-image: url('/public/assets2/img/gallery/drug1.jpg')"></div>
+                             style="background-image: url('<?= SITE_URL; ?>/public/assets2/img/gallery/drug1.jpg')"></div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Solution for injection</h3>
@@ -205,7 +206,7 @@ include_once 'partials/header.php';
             <div class="right-content2">
                 <!-- img -->
                 <div class="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                    <img src="public/assets2/img/gallery/about2.jpg" alt="image">
+                    <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/about2.jpg" alt="image"/>
                 </div>
             </div>
             <div class="left-content2">
@@ -247,7 +248,7 @@ include_once 'partials/header.php';
                     <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="public/assets2/img/gallery/blog1.png" alt="image">
+                                <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/blog1.png" alt="image"/>
                             </div>
                             <div class="blog-cap">
                                 <span>Pharmaceutical Massif solutions </span>
@@ -260,7 +261,7 @@ include_once 'partials/header.php';
                     <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="public/assets2/img/gallery/blog2.png" alt="image">
+                                <img src="<?= SITE_URL; ?>/public/assets2/img/gallery/blog2.png" alt="image"/>
                             </div>
                             <div class="blog-cap">
                                 <span>pharmaceutical antibiotic</span>
@@ -281,7 +282,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="public/assets2/img/icon/icon1.svg" alt="image">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon1.svg" alt="image"/>
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -292,7 +293,7 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="public/assets2/img/icon/icon2.svg" alt="image">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon2.svg" alt="image"/>
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
@@ -304,12 +305,11 @@ include_once 'partials/header.php';
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="public/assets2/img/icon/icon3.svg" alt="image">
+                            <img src="<?= SITE_URL; ?>/public/assets2/img/icon/icon3.svg" alt="image"/>
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>
                             <p>Secretariatpharmafg@gmail.com</p>
-
                         </div>
                     </div>
                 </div>

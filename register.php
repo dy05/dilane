@@ -96,11 +96,11 @@ try {
     <title>Pharmaceutical System Admin</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="public/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="public/css/bootstrap-responsive.min.css"/>
-    <link rel="stylesheet" href="public/css/matrix-style.css"/>
-    <link rel="stylesheet" href="public/css/matrix-login.css"/>
-    <link href="public/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/matrix-style.css"/>
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/css/matrix-login.css"/>
+    <link href="<?= SITE_URL; ?>/public/font-awesome/css/font-awesome.css" rel="stylesheet"/>
 <!--    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
     <link rel="shortcut icon" type="image/x-icon" href="assets2/img/favicon.ico">
     <style>
@@ -126,7 +126,7 @@ try {
 </head>
 <body class="bg-class">
 <div id="loginbox">
-    <form id="loginform" class="form-vertical" action="" method="POST">
+    <form id="loginform" class="form-vertical" action="" method="POST" style="background-color: #fff ;padding: 20px !important;">
         <p class="normal_text">
             Enter your details below
         </p>
@@ -238,25 +238,25 @@ try {
             </div>
         </div> -->
 
-        <div class="form-actions">
-            <span class="pull-left">
+        <div class="form-actions" style="display: flex; padding: 0 !important;">
+            <div style="text-align: left; padding: 20px 40px; width: 50%;">
                 <a href="<?= SITE_URL . '/login.php'; ?>"
-                   class="flip-link btn btn-success" id="to-login">
+                   class="flip-link btn btn-success">
                     &laquo; Back to login
                 </a>
-            </span>
-            <span class="pull-right">
+            </div>
+            <div style="text-align: right; padding: 20px 40px; width: 50%;">
                 <button class="btn btn-info" type="submit">
                     Submit
                 </button>
-            </span>
+            </div>
         </div>
     </form>
 </div>
 
-<script src="public/js/jquery.min.js"></script>
-<script src="public/js/matrix.login.js"></script>
-<script src="public/js/bootstrap.min.js"></script>
-<script src="public/js/matrix.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/jquery.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/matrix.login.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/bootstrap.min.js"></script>
+<script src="<?= SITE_URL; ?>/public/js/matrix.js"></script>
 </body>
 </html>

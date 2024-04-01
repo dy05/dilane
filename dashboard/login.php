@@ -59,10 +59,18 @@ if (!empty($_POST)) {
     <link rel="stylesheet" href="../public/css/bootstrap-responsive.min.css"/>
     <link rel="stylesheet" href="../public/css/matrix-style.css"/>
     <link rel="stylesheet" href="../public/css/matrix-login.css"/>
-    <link rel="stylesheet" href="../public/css/app.css"/>
     <link href="../public/font-awesome/css/fontawesome.css" rel="stylesheet"/>
     <link href="../public/font-awesome/css/all.css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <style>
+        .login-bg {
+            background-image: url('<?= SITE_URL; ?>/public/assets2/img/gallery/gallery3.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body class="login-bg">
 <div id="loginbox">
@@ -84,10 +92,12 @@ if (!empty($_POST)) {
 
         <div class="control-group">
             <div class="controls">
-                <div class="main_input_box">
-                    <span class="add-on bg_lg"><i class="fas fa-user-circle"></i></span>
+                <div class="main_input_box" style="display: flex; height: 3rem; justify-content: center;">
+                    <span class="add-on bg_lg" style="display: flex; justify-content: center; align-items: center;">
+                        <i class="fas fa-user-circle"></i>
+                    </span>
                     <label for="username" class="hidden d-none"></label>
-                    <input type="text" id="username"
+                    <input type="text" id="username" style="height: 100%; padding: 0 10px;"
                            value="<?= isset($datas['username']) ? $datas['username'] : ''; ?>"
                            name="username" placeholder="username" required/>
                 </div>
@@ -95,10 +105,13 @@ if (!empty($_POST)) {
         </div>
         <div class="control-group">
             <div class="controls">
-                <div class="main_input_box">
-                    <span class="add-on bg_ly"><i class="fas fa-lock"></i></span>
+                <div class="main_input_box" style="display: flex; height: 3rem; justify-content: center;">
+                    <span class="add-on bg_ly" style="display: flex; justify-content: center; align-items: center;">
+                        <i class="fas fa-lock"></i>
+                    </span>
                     <label for="password" class="hidden d-none"></label>
-                    <input type="password" id="password" name="password" placeholder="Password" required/>
+                    <input type="password" id="password" style="height: 100%; padding: 0 10px;"
+                           name="password" placeholder="Password" required/>
                 </div>
             </div>
         </div>

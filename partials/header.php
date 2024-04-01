@@ -13,19 +13,19 @@ if (!isset($title)) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="public/assets2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/assets2/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="public/assets2/css/slicknav.css">
-    <link rel="stylesheet" href="public/assets2/css/flaticon.css">
-    <link rel="stylesheet" href="public/assets2/css/gijgo.css">
-    <link rel="stylesheet" href="public/assets2/css/animate.min.css">
-    <link rel="stylesheet" href="public/assets2/css/animated-headline.css">
-    <link rel="stylesheet" href="public/assets2/css/magnific-popup.css">
-    <link rel="stylesheet" href="public/assets2/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="public/assets2/css/themify-icons.css">
-    <link rel="stylesheet" href="public/assets2/css/slick.css">
-    <link rel="stylesheet" href="public/assets2/css/nice-select.css">
-    <link rel="stylesheet" href="public/assets2/css/style.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/slicknav.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/flaticon.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/gijgo.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/animate.min.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/animated-headline.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/themify-icons.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/slick.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/nice-select.css">
+    <link rel="stylesheet" href="<?= SITE_URL; ?>/public/assets2/css/style.css">
 </head>
 <body class="black-bg">
 <!-- ? Preloader Start -->
@@ -34,7 +34,7 @@ if (!isset($title)) {
         <div class="preloader-inner position-relative">
             <div class="preloader-circle"></div>
             <div class="preloader-img pere-text">
-                <img src="public/img2/TT.jpg" alt="">
+                <img src="<?= SITE_URL; ?>/public/img2/TT.jpg" alt="">
             </div>
         </div>
     </div>
